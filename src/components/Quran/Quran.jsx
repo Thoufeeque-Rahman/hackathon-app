@@ -39,7 +39,7 @@ function Quran() {
         {data ? ( // Check if data is available
           // Render your content based on the fetched data
           data.map((chapter, index) => (
-            <div key={chapter.id} onClick={() => handleSurah(index + 1)}>
+            <div style={{cursor: 'pointer'}} key={chapter.id} onClick={() => handleSurah(index + 1)}>
               <Row className='d-flex mt-3 pt-2 justify-content-between align-items-center container'>
                 <Col xs={2}>
                   <div>
