@@ -2,14 +2,15 @@
     margin: 0px;
 }
 
-.journey-section {
+.journ-section {
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: none;
     border-radius: 25px;
+    padding: 10px 0px;
 }
 
-.journey-section::-webkit-scrollbar {
+.journ-section::-webkit-scrollbar {
     display: none;
 }
 
