@@ -34,7 +34,8 @@ function App() {
           } />
         </Routes>
       </div>
-      <div className='position-relative text-center' style={{
+
+      <div className='position-relative text-center d-none d-sm-none d-md-block' style={{
             height: '100vh',
             display: 'flex',
             justifyContent: 'center',
