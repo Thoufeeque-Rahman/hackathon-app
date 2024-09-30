@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import './Home.css';
 import Modal from 'react-modal';
 import Qalbox from '../Qalbox/Qalbox';
+import { useNavigate } from 'react-router';
 
 // Set the root element for accessibility of modal
 Modal.setAppElement('#root');
@@ -12,6 +13,7 @@ function Home() {
   const [nearestPrayer, setNearestPrayer] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false); // State to control the modal
 
+  const navigate = useNavigate()
   // Function to open modal
   const openModal = () => setIsModalOpen(true);
 
@@ -73,6 +75,10 @@ function Home() {
     setNearestPrayer(closestPrayer);
   };
 
+  const handleMaintance = () => {
+    window.location.href = '/maint';
+  }
+
   return (
     <div className='p-2' style={{ backgroundColor: '#9eb194', overflow: 'hidden' }}>
       <div className="head" style={{ backgroundColor: '#9eb194', height: '1vh' }}></div>
@@ -93,9 +99,9 @@ function Home() {
               <div style={{ height: '120px' }} className='time-card d-flex align-items-end flex-column'>
                 <div className="d-flex ms-auto fs-3 me-3">
                   <div className='px-3 py-1 text-center' style={{ background: '#9eb194', color: 'white', borderRadius: '25px', marginRight: '10px', cursor: 'pointer' }}>
-                    <p className='fs-6 fw-medium'>Profile</p>
+                    <p onClick={() => navigate('/Profile')} className='fs-6 fw-medium'>Profile</p>
                   </div>
-                  <i className='fa fa-gear mt-1 fs-3'></i>
+                  <i onClick={() => handleMaintance()} className='fa fa-gear mt-1 fs-3'></i>
                 </div>
                 <div className="p-1"></div>
                 <p className='mt-auto'>{data?.data?.date?.hijri.day} {data?.data?.date?.hijri.month.en} | {data?.data?.date?.hijri.year}</p>
@@ -156,19 +162,19 @@ function Home() {
       <div className="journ-section">
         <h4>Journey</h4>
         <div>
-          <button className="btn right" style={{ display: 'inline-block' }}>
+          <button onClick={() => handleMaintance()} className="btn right" style={{ display: 'inline-block' }}>
             Set reading goal <i className="fas fa-arrow-right"></i>
           </button>
-          <button className="btn ms-3 pt-0 left" style={{ width: '160px', height: '45px', display: 'inline-block' }}>
+          <button onClick={() => handleMaintance()} className="btn ms-3 pt-0 left" style={{ width: '160px', height: '45px', display: 'inline-block' }}>
             <span className="small" style={{ fontSize: '10px', paddingBottom: '0px' }}>Weekly</span>
             <br className="custom-br" />
             <span className="small" style={{ paddingTop: '0px' }}>-1 tracked</span>
           </button>
-          <button className="btn ms-3 pt-0 left" style={{ width: '160px', height: '45px', display: 'inline-block', alignContent: 'center', justifyContent: 'center', paddingTop: '0px' }}>
+          <button onClick={() => handleMaintance()} className="btn ms-3 pt-0 left" style={{ width: '160px', height: '45px', display: 'inline-block', alignContent: 'center', justifyContent: 'center', paddingTop: '0px' }}>
             <span className='small' style={{ marginTop: '5px', paddingTop: '5px' }}>Days Prayed</span>
             <span>--</span>
           </button>
-          <button className="btn ms-3 pt-0 left" style={{ width: '160px', height: '45px', display: 'inline-block' }}>
+          <button onClick={() => handleMaintance()} className="btn ms-3 pt-0 left" style={{ width: '160px', height: '45px', display: 'inline-block' }}>
             <span className="small" style={{ fontSize: '10px', paddingBottom: '0px' }}>Weekly</span>
             <br className="custom-br" />
             <span className="small" style={{ paddingTop: '0px' }}>-1 tracked</span>
@@ -179,42 +185,42 @@ function Home() {
       <div className="more-buttons">
         <Row>
           <Col xs={2} style={{ textAlign: 'center' }}>
-            <div>
+            <div onClick={() => handleMaintance()}>
               <i class="fa-solid fa-ellipsis p-3" style={{ color: 'white', backgroundColor: 'grey', borderRadius: '25px', cursor: 'pointer' }}></i>
               More
             </div>
           </Col>
 
           <Col xs={2} style={{ textAlign: 'center' }}>
-            <div>
+            <div onClick={() => handleMaintance()}>
               <i class="fa-solid fa-compass  fs-1" style={{ color: 'white', borderRadius: '25px', backgroundColor: 'grey', cursor: 'pointer', padding: '10px' }}></i>
               Qibla
             </div>
           </Col>
 
           <Col xs={2} style={{ textAlign: 'center' }}>
-            <div>
+            <div onClick={() => handleMaintance()}>
               <i class="fa-solid fa-hands-holding p-3" style={{ color: 'white', backgroundColor: 'grey', borderRadius: '25px', cursor: 'pointer' }}></i>
               Duas
             </div>
           </Col>
 
           <Col xs={2} style={{ textAlign: 'center' }}>
-            <div>
+            <div onClick={() => handleMaintance()}>
               <i class="fa-solid fa-video p-3" style={{ color: 'white', backgroundColor: 'grey', borderRadius: '25px', cursor: 'pointer' }}></i>
               Live
             </div>
           </Col>
 
           <Col xs={2} style={{ textAlign: 'center' }}>
-            <div>
+            <div onClick={() => handleMaintance()}>
               <i class="fa-solid fa-book-open p-3" style={{ color: 'white', backgroundColor: 'grey', borderRadius: '25px', cursor: 'pointer' }}></i>
               Ilm
             </div>
           </Col>
 
           <Col xs={2} style={{ textAlign: 'center' }}>
-            <div>
+            <div onClick={() => handleMaintance()}>
               <i class="fa-solid fa-circle-plus p-3" style={{ color: 'white', backgroundColor: 'grey', borderRadius: '25px', cursor: 'pointer' }}></i>
               Tasbih
             </div>

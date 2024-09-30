@@ -9,6 +9,7 @@ import Qalbox from './components/Qalbox/Qalbox';
 import Quran from './components/Quran/Quran';
 import ReadSurah from './components/ReadSurah/ReadSurah';
 import Profile from './components/Profile/Profile';
+import Maintenance from './components/Maintenance/Maintenance';
 
 function App() {
 
@@ -26,21 +27,25 @@ function App() {
                 <Route path="/Quran" element={<Quran />} />
                 <Route path="/Quran/read-surah/:surahNumber" element={<ReadSurah />} />
                 <Route path="/Profile" element={<Profile />} />
+                <Route path="/maint" element={<Maintenance />} />
+                
               </Routes>
             </div>
           } />
         </Routes>
       </div>
-      <div className="d-md-block d-none d-sm-none text-center" style={{
-        backgroundColor: 'grey',
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column',
-      }}>
-        <p>Not supported in this Device, use Mobile Device to use App.</p>
-      </div>
+      <div className='position-relative text-center' style={{
+            height: '100vh',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
+        }}>
+            <div className='position-absolute top-50 start-50 translate-middle'>
+                <i style={{ fontSize: '100px' }} class="fa-solid fa-ghost mb-3"></i>
+                <p>This Device is not supported for this app. Use Mobile Phone for better experience!</p>
+            </div>
+        </div>
     </div>
   );
 }

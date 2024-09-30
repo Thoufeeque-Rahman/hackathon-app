@@ -25,12 +25,14 @@ function Quran() {
     navigate(`/Quran/read-surah/${surahNumber}`)
     console.log(`clicked ${surahNumber}`);
   }
-
+  const handleMaintance = () => {
+    window.location.href = '/maint';
+  }
   return (
     <div className="quran pb-5">
       <div className="quran-head shadow-sm p-3 sticky-top d-flex justify-content-between align-items-center" style={{ backgroundColor: '#9eb194' }}>
         <h4 className='m-0'>Quran</h4>
-        <i className='fa fa-gear'></i>
+        <i onClick={() => handleMaintance()} className='fa fa-gear'></i>
       </div>
       <div className="quran-table p-3 pb-5">
         <div className='px-2 text-center' style={{ background: 'white', color: '#9eb194', paddingTop: '5px', paddingBottom: '3px', borderRadius: '20px', width: 'fit-content' }}>
