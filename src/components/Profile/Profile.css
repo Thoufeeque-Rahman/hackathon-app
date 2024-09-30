@@ -1,0 +1,70 @@
+body {
+    background-color: #9eb194;
+    color: #fef7f0;
+    font-family: Arial, sans-serif;
+}
+
+.profile-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-section img {
+    border-radius: 50%;
+}
+
+.btn-premium,
+.btn-create-account,
+.btn {
+    background-color: #fef7f0;
+    color: #7c9077;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.btn-create-account {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.journey-section,
+.progress-section,
+.streak-section {
+    padding: 20px;
+}
+
+.progress-section {
+    background-color: #fef7f0;
+    color: #7c9077;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.streak-section {
+    background-color: #fef7f0;
+    color: #7c9077;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.ad-banner {
+    background-color: #fef7f0;
+    color: #7c9077;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.right:hover {
+    background-color: #7c9077;
+    color: #fef7f0;
+}
+
+.left:hover {
+    background-color: #7c9077;
+    color: #fef7f0;
+}
+

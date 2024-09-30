@@ -1,0 +1,44 @@
+.nav-bar {
+    background-color: #f2e9da;
+    padding: 10px;
+    padding-left: 10px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin:0 auto;
+    left: 0px;
+    z-index: 1000;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.nav-bar a {
+    /* margin-left: auto; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Size of the circle */
+    height: 50px; /* Size of the circle */
+    border-radius: 50%; /* Makes the link round */
+    background-color: #7c9077; /* Background color */
+    color: #faf9fc; /* Default text/icon color */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+    padding: 10px; /* Padding for better clickable area */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Font weight */
+    position: relative; /* Required for some effects */
+  }
+  
+.nav-bar a i {
+    display: block;
+    font-size: 20px;
+}
+.nav-bar a.active {
+    color: #e1dbcb;
+    font-weight: bolder;
+    transform: scale(1.1); /* Slight scale effect for active link */
+}
+.nav-bar a:hover {
+    color: #e1dbcb; /* Change color on hover */
+}
