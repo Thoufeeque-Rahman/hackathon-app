@@ -76,7 +76,7 @@ function Home() {
   };
 
   const handleMaintance = () => {
-    window.location.href = '/maint';
+    navigate('/maint')
   }
 
   return (

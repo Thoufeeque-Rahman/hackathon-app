@@ -4,7 +4,7 @@ import './Profile.css'; // Make sure to create this CSS file with the same style
 const Profile = () => {
 
   const handleMaintance = () => {
-    window.location.href = '/maint';
+    navigate('/maint')
   }
   return (
     <div>

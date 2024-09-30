@@ -26,7 +26,7 @@ function Quran() {
     console.log(`clicked ${surahNumber}`);
   }
   const handleMaintance = () => {
-    window.location.href = '/maint';
+    navigate('/maint')
   }
   return (
     <div className="quran pb-5">
