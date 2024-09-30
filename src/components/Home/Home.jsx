@@ -75,7 +75,7 @@ function Home() {
   return (
     <div className='p-2' style={{ backgroundColor: '#9eb194', height: '100vh', overflow: 'hidden' }}>
       <div className="head" style={{ backgroundColor: '#9eb194', height: '1vh' }}></div>
-      <div style={{ backgroundColor: '#f2e9da', color: '#9eb194', borderRadius:'25px' }} className="time-and-date  p-3 shadow-sm">
+      <div style={{ backgroundColor: '#f2e9da', color: '#9eb194', borderRadius: '25px' }} className="time-and-date  p-3 shadow-sm">
         <Row>
           <Col xs={6}>
             {nearestPrayer && (
@@ -158,22 +158,49 @@ function Home() {
           Set reading goal <i className="fas fa-arrow-right"></i>
         </button>
         <button className="btn ms-3 pt-0 left" style={{ width: '160px', height: '45px', display: 'inline-block' }}>
-          <span className="small" style={{ fontSize: '10px', paddingBottom:'0px' }}>Weekly</span>
+          <span className="small" style={{ fontSize: '10px', paddingBottom: '0px' }}>Weekly</span>
           <br className="custom-br" />
-          <span className="small" style={{ paddingTop:'0px' }}>-1 tracked</span>
+          <span className="small" style={{ paddingTop: '0px' }}>-1 tracked</span>
         </button>
-        <button className="btn ms-3 pt-0 left" style={{ width: '160px', height: '45px', display: 'inline-block', alignContent:'center',justifyContent:'center', paddingTop:'0px' }}>
-            <span className='small' style={{marginTop:'5px', paddingTop:'5px'}}>Days Prayed</span>
-            <span>--</span>
+        <button className="btn ms-3 pt-0 left" style={{ width: '160px', height: '45px', display: 'inline-block', alignContent: 'center', justifyContent: 'center', paddingTop: '0px' }}>
+          <span className='small' style={{ marginTop: '5px', paddingTop: '5px' }}>Days Prayed</span>
+          <span>--</span>
         </button>
         <button className="btn ms-3 pt-0 left" style={{ width: '160px', height: '45px', display: 'inline-block' }}>
-          <span className="small" style={{ fontSize: '10px', paddingBottom:'0px' }}>Weekly</span>
+          <span className="small" style={{ fontSize: '10px', paddingBottom: '0px' }}>Weekly</span>
           <br className="custom-br" />
-          <span className="small" style={{ paddingTop:'0px' }}>-1 tracked</span>
+          <span className="small" style={{ paddingTop: '0px' }}>-1 tracked</span>
         </button>
       </div>
 
-
+      <div className="more-buttons">
+        <Row>
+          <Col xs={2} style={{ textAlign: 'center' }}>
+              <img src="https://th.bing.com/th/id/OIP.vtpF-swAcxP3BDigcg5iDQAAAA?w=256&h=256&rs=1&pid=ImgDetMain" alt="more" style={{height:'50px',width:'50px'}}/>
+              More
+          </Col>
+          <Col xs={2} style={{ textAlign: 'center' }}>
+              <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/qibla-3383772-2811920.png" alt="more" style={{height:'50px',width:'50px'}}/>
+              Qibla
+          </Col>
+          <Col xs={2} style={{ textAlign: 'center' }}>
+              <img src="https://icons.veryicon.com/png/o/miscellaneous/practice-1/more-612.png" alt="more" style={{height:'50px',width:'50px'}}/>
+              More
+          </Col>
+          <Col xs={2} style={{ textAlign: 'center' }}>
+              <img src="https://icons.veryicon.com/png/o/miscellaneous/practice-1/more-612.png" alt="more" style={{height:'50px',width:'50px'}}/>
+              More
+          </Col>
+          <Col xs={2} style={{ textAlign: 'center' }}>
+              <img src="https://icons.veryicon.com/png/o/miscellaneous/practice-1/more-612.png" alt="more" style={{height:'50px',width:'50px'}}/>
+              More
+          </Col>
+          <Col xs={2} style={{ textAlign: 'center' }}>
+              <img src="https://icons.veryicon.com/png/o/miscellaneous/practice-1/more-612.png" alt="more" style={{height:'50px',width:'50px'}}/>
+              More
+          </Col>
+        </Row>
+      </div>
 
     </div>
   );
