@@ -114,7 +114,7 @@ function Home() {
 
       {/* AiDeen */}
       <div
-        className="rouded mt-2 p-1 ps-3 shadow-sm border-2 border-white"
+        className="rouded mt-2 p-1 ps-3 shadow-sm"
         style={{
           width: '100%',
           height: '5%',
@@ -122,11 +122,12 @@ function Home() {
           background: 'linear-gradient(130deg, #fff, #9eb194)',
           color: '#9eb194',
           cursor: 'pointer',
+          border: '#f2e9da 2px solid'
         }}
         onClick={openModal} // Open the modal on click
       >
         <img src="https://www.salam.chat/_next/static/media/salamchaticon.567b4abf.svg" alt="salam chat" style={{ height: '20px', width: '20px' }} />
-        <span style={{ paddingTop: '10px', fontSize: '15px' }}> Ask AiDeen anything.. </span>
+        <span style={{ paddingTop: '10px', fontSize: '15px', paddingLeft: '10px', color: '#9eb194', fontWeight: '500' }}> Ask AiDeen anything.. </span>
       </div>
 
       <Modal
@@ -186,42 +187,42 @@ function Home() {
         <Row>
           <Col xs={2} style={{ textAlign: 'center' }}>
             <div onClick={() => handleMaintance()}>
-              <i class="fa-solid fa-ellipsis p-3" style={{ color: 'white', backgroundColor: 'grey', borderRadius: '25px', cursor: 'pointer' }}></i>
+              <i class="fa-solid fa-ellipsis p-3" style={{ color: '#9eb194', backgroundColor: '#f2e9da', borderRadius: '25px', cursor: 'pointer' }}></i>
               More
             </div>
           </Col>
 
           <Col xs={2} style={{ textAlign: 'center' }}>
             <div onClick={() => handleMaintance()}>
-              <i class="fa-solid fa-compass  fs-1" style={{ color: 'white', borderRadius: '25px', backgroundColor: 'grey', cursor: 'pointer', padding: '10px' }}></i>
+              <i class="fa-solid fa-compass  fs-1" style={{ color: '#9eb194', backgroundColor: '#f2e9da', borderRadius: '25px', cursor: 'pointer', padding: '10px' }}></i>
               Qibla
             </div>
           </Col>
 
           <Col xs={2} style={{ textAlign: 'center' }}>
             <div onClick={() => handleMaintance()}>
-              <i class="fa-solid fa-hands-holding p-3" style={{ color: 'white', backgroundColor: 'grey', borderRadius: '25px', cursor: 'pointer' }}></i>
+              <i class="fa-solid fa-hands-holding p-3" style={{ color: '#9eb194', backgroundColor: '#f2e9da', borderRadius: '25px', cursor: 'pointer' }}></i>
               Duas
             </div>
           </Col>
 
           <Col xs={2} style={{ textAlign: 'center' }}>
             <div onClick={() => handleMaintance()}>
-              <i class="fa-solid fa-video p-3" style={{ color: 'white', backgroundColor: 'grey', borderRadius: '25px', cursor: 'pointer' }}></i>
+              <i class="fa-solid fa-video p-3" style={{ color: '#9eb194', backgroundColor: '#f2e9da', borderRadius: '25px', cursor: 'pointer' }}></i>
               Live
             </div>
           </Col>
 
           <Col xs={2} style={{ textAlign: 'center' }}>
             <div onClick={() => handleMaintance()}>
-              <i class="fa-solid fa-book-open p-3" style={{ color: 'white', backgroundColor: 'grey', borderRadius: '25px', cursor: 'pointer' }}></i>
+              <i class="fa-solid fa-book-open p-3" style={{ color: '#9eb194', backgroundColor: '#f2e9da', borderRadius: '25px', cursor: 'pointer' }}></i>
               Ilm
             </div>
           </Col>
 
           <Col xs={2} style={{ textAlign: 'center' }}>
             <div onClick={() => handleMaintance()}>
-              <i class="fa-solid fa-circle-plus p-3" style={{ color: 'white', backgroundColor: 'grey', borderRadius: '25px', cursor: 'pointer' }}></i>
+              <i class="fa-solid fa-circle-plus p-3" style={{ color: '#9eb194', backgroundColor: '#f2e9da', borderRadius: '25px', cursor: 'pointer' }}></i>
               Tasbih
             </div>
           </Col>

@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <Container className='content fixed-bottom'>
       <div className="row mx-auto">
-        <div className="nav-bar col-md-12 mx-auto d-flex justify-content-between align-items-center mb-4">
+        <div className="nav-bar px-4 col-md-12 mx-auto d-flex justify-content-between align-items-center mb-4">
           <a
             className={activeLink === '' ? 'active' : ''}
             onClick={() => handleLinkClick('')}

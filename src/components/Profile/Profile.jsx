@@ -7,13 +7,13 @@ const Profile = () => {
     navigate('/maint')
   }
   return (
-    <div>
+    <div className='pb-5 mb-3 p-2'>
       <div className="profile-section">
         <img
           alt="Profile"
           src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
-          width="50"
-          height="50"
+          width="100"
+          height="100"
         />
         <br />
         <button onClick={() => handleMaintance()} className="btn-premium">Donate</button>
@@ -26,12 +26,12 @@ const Profile = () => {
         <button onClick={() => handleMaintance()} className="btn right">
           Set reading goal <i className="fas fa-arrow-right"></i>
         </button>
-        <button onClick={() => handleMaintance()} className="btn ms-3 pt-0 left" style={{width:'160px',height:'45px'}}>
-        <span className="small" style={{ fontSize: '10px' }}>Weekly</span>
-        <br className='custom-br' />
-        <span className='small '>-1 tracked</span>
+        <button onClick={() => handleMaintance()} className="btn ms-3 pt-0 left" style={{ width: '160px', height: '45px' }}>
+          <span className="small m-0" style={{ fontSize: '10px' }}>Weekly</span>
+          <br className='custom-br' />
+          <span className='small '>-1 tracked</span>
         </button>
-        
+
         <div className="progress-section">
           <div className="progress-item">
             <span>Days Prayed</span>
@@ -52,8 +52,9 @@ const Profile = () => {
         </div>
       </div>
 
-      <div className="ad-banner pb-5">
-        <p>DON'T LIKE ADS? Try Premium and you'll never go back</p>                                      
+      <div className="ad-banner mb-5">
+        <p>Join our global community for helping the poorest muslims!</p>
+        <button onClick={() => handleMaintance()} className="btn-premium bt">Donate Now</button>
       </div>
     </div>
   );
