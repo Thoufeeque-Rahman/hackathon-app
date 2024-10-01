@@ -17,7 +17,8 @@
 - **Database**: [MongoDB](https://www.mongodb.com/) for managing user data and application content.
 - **AI Integration**: Leveraging machine learning to power the AI-based chatbot for real-time guidance.
 - **Deployment**: Hosted using [Render](https://render.com/) or [AWS](https://aws.amazon.com/) for scalable, cloud-based deployment.
-- **APIs**: 
+- **APIs**: [Al Adhan](https://aladhan.com/) used for getting Prayer times and Hijri date.
+[Quran API](https://quranapi.pages.dev/) used for getting Quran - list of Surahs and Individual surah - in this app.
 
 ## Installation
 
