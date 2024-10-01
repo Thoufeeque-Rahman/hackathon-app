@@ -74,4 +74,4 @@ We welcome contributions to **The Muslim App**! If you're interested in contribu
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
 
 ## Contact
-If you have any questions or feedback, feel free to contact us at: **[your-email@example.com](mailto:your-email@example.com)**.
+If you have any questions or feedback, feel free to contact us at: **[your-email@example.com](mailto:rahman.am90@gmail.com)**.
