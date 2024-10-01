@@ -17,6 +17,7 @@
 - **Database**: [MongoDB](https://www.mongodb.com/) for managing user data and application content.
 - **AI Integration**: Leveraging machine learning to power the AI-based chatbot for real-time guidance.
 - **Deployment**: Hosted using [Render](https://render.com/) or [AWS](https://aws.amazon.com/) for scalable, cloud-based deployment.
+- **APIs**: 
 
 ## Installation
 
@@ -74,4 +75,4 @@ We welcome contributions to **The Muslim App**! If you're interested in contribu
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
 
 ## Contact
-If you have any questions or feedback, feel free to contact us at: **[your-email@example.com](mailto:rahman.am90@gmail.com)**.
+If you have any questions or feedback, feel free to contact us at: **[rahman.am90@gmail.com](mailto:rahman.am90@gmail.com)**.
